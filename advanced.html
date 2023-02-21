@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Advanced Search</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <style>
+            input[type="submit"] {
+                color:white;
+                background-color: rgb(74,140,245);
+                border: none;
+                font-size: 12px;
+                font-weight: bold;
+            }
+            input[type="submit"]:hover {
+                background-color: rgb(69,135,239);
+            }
+            h5 {
+                color:red;
+                text-indent: 25px
+            }
+            form label {
+                font-size: 13px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div style="text-align: right;">
+                <a href=".\index.html">Google Search</a>
+            </div>
+            <br>
+            <h5>Advanced Search</h5>
+            <hr>
+            <p style="text-indent: 25px;">
+                Find pages with...
+                <div class="row">
+                    <div class="col-7" style="text-indent: 25px;">
+                        <form action="https://www.google.com/search">
+                            <div class="form-group row align-items-center">
+                                <label for="all-words" class="col-sm-3">all these words:</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control m-2" name="as_q" id="all-words">
+                                </div>
+                            </div>
+                            <div class="form-group row align-items-center">
+                                <label for="exact-words" class="col-sm-3">this exact word or phrase:</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control m-2" name="as_epq" id="exact-words">
+                                </div>
+                            </div>
+                            <div class="form-group row align-items-center">
+                                <label for="any-words" class="col-sm-3">any of these words:</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control m-2" name="as_oq" id="any-words">
+                                </div>
+                            </div>
+                            <div class="form-group row align-items-center">
+                                <label for="none-words" class="col-sm-3">none of these words:</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control m-2" name="as_eq" id="none-words">
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-end align-items-end">
+                                <input type="submit" value="Advanced Search" class="p-2">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-5"></div>
+                </div>
+            </p>
+        </div>
+    </body>
+</html>
