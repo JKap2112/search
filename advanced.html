@@ -20,7 +20,10 @@
                 text-indent: 25px
             }
             form label {
-                font-size: 13px;
+                font-size: 12px;
+            }
+            .fixed{
+                width: 200px;
             }
 
         </style>
@@ -36,29 +39,29 @@
             <p style="text-indent: 25px;">
                 Find pages with...
                 <div class="row">
-                    <div class="col-7" style="text-indent: 25px;">
+                    <div class="col-11 col-lg-7 col-sm-10" style="text-indent: 25px;">
                         <form action="https://www.google.com/search">
                             <div class="form-group row align-items-center">
-                                <label for="all-words" class="col-sm-3">all these words:</label>
-                                <div class="col-sm-9">
+                                <label for="all-words" class="fixed">all these words:</label>
+                                <div class="col">
                                     <input type="text" class="form-control m-2" name="as_q" id="all-words">
                                 </div>
                             </div>
                             <div class="form-group row align-items-center">
-                                <label for="exact-words" class="col-sm-3">this exact word or phrase:</label>
-                                <div class="col-sm-9">
+                                <label for="exact-words" class="fixed">this exact word or phrase:</label>
+                                <div class="col">
                                     <input type="text" class="form-control m-2" name="as_epq" id="exact-words">
                                 </div>
                             </div>
                             <div class="form-group row align-items-center">
-                                <label for="any-words" class="col-sm-3">any of these words:</label>
-                                <div class="col-sm-9">
+                                <label for="any-words" class="fixed">any of these words:</label>
+                                <div class="col">
                                     <input type="text" class="form-control m-2" name="as_oq" id="any-words">
                                 </div>
                             </div>
                             <div class="form-group row align-items-center">
-                                <label for="none-words" class="col-sm-3">none of these words:</label>
-                                <div class="col-sm-9">
+                                <label for="none-words" class="fixed">none of these words:</label>
+                                <div class="col">
                                     <input type="text" class="form-control m-2" name="as_eq" id="none-words">
                                 </div>
                             </div>
@@ -67,7 +70,7 @@
                             </div>
                         </form>
                     </div>
-                    <div class="col-5"></div>
+                    <div class="col"></div>
                 </div>
             </p>
         </div>
